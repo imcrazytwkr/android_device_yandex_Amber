@@ -349,12 +349,6 @@ vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
 
 # Media - from yandex
-system/lib/extractors/libmmparser.so
-system/lib/libFileMux.so
-system/lib/libmmosal.so
-system/lib/libmmparser_lite.so
-system/lib/libOmxMux.so
-system/lib64/libmmosal.so
 -vendor/lib/libgpustats.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
