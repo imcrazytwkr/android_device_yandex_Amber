@@ -1,0 +1,2 @@
+# Fingerprint
+/dev/elan_fp                                u:object_r:fingerprint_device:s0
