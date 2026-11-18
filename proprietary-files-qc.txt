@@ -366,7 +366,6 @@ vendor/lib/libmmsw_platform.so
 vendor/lib/libOmxAacDec.so
 vendor/lib/libOmxEvrcDec.so
 vendor/lib/libOmxQcelp13Dec.so
-vendor/lib/libOmxVideoDSMode.so
 vendor/lib/libOmxVpp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
@@ -453,10 +452,8 @@ vendor/bin/hw/vendor.qti.hardware.factory@1.0-service
 vendor/etc/init/vendor.qti.hardware.factory@1.0-service.rc
 vendor/etc/permissions/vendor.qti.hardware.factory.xml
 vendor/lib/hw/vendor.qti.hardware.factory@1.0-impl.so
-vendor/lib/vendor.qti.data.factory@1.0.so
 vendor/lib/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so
-vendor/lib64/vendor.qti.data.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 
 # Radio - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040

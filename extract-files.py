@@ -19,6 +19,7 @@ from extract_utils.main import (
 
 namespace_imports = [
     'device/yandex/Amber',
+    'hardware/qcom-caf/common/libqti-perfd-client',
     'hardware/qcom-caf/msm8998',
     'hardware/qcom-caf/wlan',
     'vendor/qcom/opensource/dataservices',
