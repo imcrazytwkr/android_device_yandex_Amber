@@ -336,7 +336,8 @@ PRODUCT_SOONG_NAMESPACES += \
 # Symlinks
 PRODUCT_PACKAGES += \
     firmware_wlan_mac.bin_symlink \
-    firmware_WCNSS_qcom_cfg.ini_symlink
+    firmware_WCNSS_qcom_cfg.ini_symlink \
+    dpm.conf_symlink
 
 # Telephony
 PRODUCT_PACKAGES += \

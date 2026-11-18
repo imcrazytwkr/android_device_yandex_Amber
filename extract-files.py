@@ -60,56 +60,62 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
-    'product/lib64/lib-imscamera.so': blob_fixup()
-        .add_needed('libgui_shim.so')
-        .remove_needed('libhidltransport.so')
-        .remove_needed('libhwbinder.so'),
     (
-        'product/lib/lib-imsvideocodec.so',
-        'product/lib64/lib-imsvideocodec.so',
+        "system_ext/etc/init/dpmd.rc",
+        "system_ext/etc/permissions/com.qti.dpmframework.xml",
+        "system_ext/etc/permissions/dpmapi.xml",
     ): blob_fixup()
-        .add_needed('libgui_shim.so')
-        .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so')
-        .remove_needed('libhidltransport.so')
-        .remove_needed('libhwbinder.so'),
+        .regex_replace("/system/product/", "/system/system_ext/"),
+    "system_ext/lib64/lib-imscamera.so": blob_fixup()
+        .add_needed("libgui_shim.so")
+        .remove_needed("libhidltransport.so")
+        .remove_needed("libhwbinder.so"),
     (
-        'product/lib/com.qualcomm.qti.dpm.api@1.0.so',
-        'product/lib/com.qualcomm.qti.imscmservice@1.0.so',
-        'product/lib/com.qualcomm.qti.imscmservice@2.0.so',
-        'product/lib/com.qualcomm.qti.imscmservice@2.1.so',
-        'product/lib/com.qualcomm.qti.imscmservice@2.2.so',
-        'product/lib/com.qualcomm.qti.uceservice@2.0.so',
-        'product/lib/com.qualcomm.qti.uceservice@2.1.so',
-        'product/lib/libdpmframework.so',
-        'product/lib/vendor.qti.hardware.radio.ims@1.0.so',
-        'product/lib/vendor.qti.hardware.radio.ims@1.1.so',
-        'product/lib/vendor.qti.hardware.radio.ims@1.2.so',
-        'product/lib/vendor.qti.hardware.radio.ims@1.3.so',
-        'product/lib/vendor.qti.hardware.radio.ims@1.4.so',
-        'product/lib/vendor.qti.ims.callinfo@1.0.so',
-        'product/lib/vendor.qti.ims.rcsconfig@1.0.so',
-        'product/lib/vendor.qti.imsrtpservice@2.0.so',
-        'product/lib/vendor.qti.imsrtpservice@2.1.so',
-        'product/lib64/com.qualcomm.qti.dpm.api@1.0.so',
-        'product/lib64/com.qualcomm.qti.imscmservice@1.0.so',
-        'product/lib64/com.qualcomm.qti.imscmservice@2.0.so',
-        'product/lib64/com.qualcomm.qti.imscmservice@2.1.so',
-        'product/lib64/com.qualcomm.qti.imscmservice@2.2.so',
-        'product/lib64/com.qualcomm.qti.uceservice@2.0.so',
-        'product/lib64/com.qualcomm.qti.uceservice@2.1.so',
-        'product/lib64/lib-imsvt.so',
-        'product/lib64/vendor.qti.hardware.radio.ims@1.0.so',
-        'product/lib64/vendor.qti.hardware.radio.ims@1.1.so',
-        'product/lib64/vendor.qti.hardware.radio.ims@1.2.so',
-        'product/lib64/vendor.qti.hardware.radio.ims@1.3.so',
-        'product/lib64/vendor.qti.hardware.radio.ims@1.4.so',
-        'product/lib64/vendor.qti.ims.callinfo@1.0.so',
-        'product/lib64/vendor.qti.ims.rcsconfig@1.0.so',
-        'product/lib64/vendor.qti.imsrtpservice@2.0.so',
-        'product/lib64/vendor.qti.imsrtpservice@2.1.so',
+        "system_ext/lib/lib-imsvideocodec.so",
+        "system_ext/lib64/lib-imsvideocodec.so",
     ): blob_fixup()
-        .remove_needed('libhidltransport.so')
-        .remove_needed('libhwbinder.so'),
+        .add_needed("libgui_shim.so")
+        .replace_needed("libqdMetaData.so", "libqdMetaData.system.so")
+        .remove_needed("libhidltransport.so")
+        .remove_needed("libhwbinder.so"),
+    (
+        "product/lib/com.qualcomm.qti.imscmservice@1.0.so",
+        "product/lib/com.qualcomm.qti.imscmservice@2.0.so",
+        "product/lib/com.qualcomm.qti.imscmservice@2.1.so",
+        "product/lib/com.qualcomm.qti.imscmservice@2.2.so",
+        "product/lib/com.qualcomm.qti.uceservice@2.0.so",
+        "product/lib/com.qualcomm.qti.uceservice@2.1.so",
+        "product/lib/vendor.qti.hardware.radio.ims@1.0.so",
+        "product/lib/vendor.qti.hardware.radio.ims@1.1.so",
+        "product/lib/vendor.qti.hardware.radio.ims@1.2.so",
+        "product/lib/vendor.qti.hardware.radio.ims@1.3.so",
+        "product/lib/vendor.qti.hardware.radio.ims@1.4.so",
+        "product/lib/vendor.qti.ims.callinfo@1.0.so",
+        "product/lib/vendor.qti.ims.rcsconfig@1.0.so",
+        "product/lib64/com.qualcomm.qti.imscmservice@1.0.so",
+        "product/lib64/com.qualcomm.qti.imscmservice@2.0.so",
+        "product/lib64/com.qualcomm.qti.imscmservice@2.1.so",
+        "product/lib64/com.qualcomm.qti.imscmservice@2.2.so",
+        "product/lib64/com.qualcomm.qti.uceservice@2.0.so",
+        "product/lib64/com.qualcomm.qti.uceservice@2.1.so",
+        "product/lib64/vendor.qti.hardware.radio.ims@1.0.so",
+        "product/lib64/vendor.qti.hardware.radio.ims@1.1.so",
+        "product/lib64/vendor.qti.hardware.radio.ims@1.2.so",
+        "product/lib64/vendor.qti.hardware.radio.ims@1.3.so",
+        "product/lib64/vendor.qti.hardware.radio.ims@1.4.so",
+        "product/lib64/vendor.qti.ims.callinfo@1.0.so",
+        "product/lib64/vendor.qti.ims.rcsconfig@1.0.so",
+        "system_ext/lib/com.qualcomm.qti.dpm.api@1.0.so",
+        "system_ext/lib/libdpmframework.so",
+        "system_ext/lib/vendor.qti.imsrtpservice@2.0.so",
+        "system_ext/lib/vendor.qti.imsrtpservice@2.1.so",
+        "system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so",
+        "system_ext/lib64/lib-imsvt.so",
+        "system_ext/lib64/vendor.qti.imsrtpservice@2.0.so",
+        "system_ext/lib64/vendor.qti.imsrtpservice@2.1.so",
+    ): blob_fixup()
+        .remove_needed("libhidltransport.so")
+        .remove_needed("libhwbinder.so"),
     (
         'vendor/lib/libdualcameraddm.so',
         'vendor/lib/libvideobokeh.so',

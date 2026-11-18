@@ -22,3 +22,14 @@ install_symlink {
     installed_location: "firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini",
     symlink_target: "/vendor/etc/wifi/WCNSS_qcom_cfg.ini",
 }
+
+// 32-bit libdpmframework.so opens /system/product/etc/dpm/dpm.conf and that
+// string has no spare bytes. The library itself cannot stay in product because
+// it links libbinder, so both copies are installed in system_ext. The 64-bit
+// copy already opens /system/system_ext/etc/dpm/dpm.conf.
+install_symlink {
+    name: "dpm.conf_symlink",
+    product_specific: true,
+    installed_location: "etc/dpm/dpm.conf",
+    symlink_target: "/system/system_ext/etc/dpm/dpm.conf",
+}
