@@ -1,10 +1,6 @@
-
 cc_library_shared {
-
     name: "libloc_core",
     vendor: true,
-
-
 
     shared_libs: [
         "liblog",
@@ -12,14 +8,13 @@ cc_library_shared {
         "libcutils",
         "libgps.utils",
         "libdl",
-        "liblog",
     ],
 
     srcs: [
         "LocApiBase.cpp",
         "LocAdapterBase.cpp",
         "ContextBase.cpp",
-        "LocContext.cpp",
+        "LocDualContext.cpp",
         "loc_core_log.cpp",
         "data-items/DataItemsFactoryProxy.cpp",
         "SystemStatusOsObserver.cpp",
@@ -42,14 +37,13 @@ cc_library_shared {
         "libloc_pla_headers",
         "liblocation_api_headers",
     ],
-
 }
 
 cc_library_headers {
-
     name: "libloc_core_headers",
     vendor: true,
-    export_include_dirs: ["."] + [
+    export_include_dirs: [
+        ".",
         "data-items",
         "observer",
     ],

@@ -1,10 +1,6 @@
-
 cc_library_shared {
-
     name: "liblocation_api",
     vendor: true,
-
-
 
     shared_libs: [
         "libutils",
@@ -25,11 +21,9 @@ cc_library_shared {
         "libloc_pla_headers",
         "libgps.utils_headers",
     ],
-
 }
 
 cc_library_headers {
-
     name: "liblocation_api_headers",
     export_include_dirs: ["."],
     vendor: true,
