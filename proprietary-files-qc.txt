@@ -44,7 +44,6 @@ vendor/lib/soundfx/libqcreverb.so
 vendor/lib/soundfx/libqcvirt.so
 
 # ANT+ - from yandex
--system/lib/libantradio.so
 system/lib64/com.qualcomm.qti.ant@1.0.so
 -system/lib64/libantradio.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor
@@ -54,7 +53,6 @@ vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 vendor/bin/hci_qcomm_init
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib/hw/android.hardware.bluetooth@1.0-impl-qti.so
-vendor/lib/libbt-hidlclient.so
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
 vendor/lib64/libbt-hidlclient.so
 vendor/lib64/libbtnv.so
@@ -602,7 +600,6 @@ product/lib/com.qualcomm.qti.uceservice@2.1.so|ceb0cd7a9509eb9f7c9fe018f60d0a583
 product/lib/libimscamera_jni.so|5cf40c68b8d6928e8f1ce5752077746325be6b41
 product/lib/libimsmedia_jni.so|c28b0e8ff4b213a720dc6a55d52af3c87d43eaed
 product/lib/lib-imsvideocodec.so;MAKE_COPY_RULE_ONLY|5493f8297fd991efef1527b9a904d9bc9e99c524
-product/lib/lib-imsvt.so|82152fa9df9d77afb54c06dcd8626180a13fdaad
 product/lib/lib-imsvtextutils.so|403f46792235282f52d472896fced74703e6493c
 product/lib/lib-imsvtutils.so|6bda694422da2f04999f31b58901771b8b532f66
 product/lib/vendor.qti.hardware.radio.ims@1.0.so|a35377f2b793e990b89fa331f8f69ed46744611d
@@ -657,18 +654,7 @@ vendor/lib64/vendor.qti.imsrtpservice@2.0.so;MODULE_SUFFIX=_vendor|fdc13f23a021c
 vendor/lib64/vendor.qti.imsrtpservice@2.1-service-Impl.so|0fb9dae5a902c89fc0467c7215772f837408cdcd
 vendor/lib64/vendor.qti.imsrtpservice@2.1.so;MODULE_SUFFIX=_vendor|7b227f1a007619dcae8d541eabe99eb5581d226d
 vendor/lib/librcc.so|cff6906f11955addca898f2e4e2b571cab92bd29
-vendor/lib/lib-imscmservice.so|bd04d266872f7a41226e6d72185b06e27f6c690e
-vendor/lib/lib-imsdpl.so|af3e240b3e7bef2ec0954a91ee88524ec2883099
-vendor/lib/lib-imsqimf.so|39bba309923442c03d50231b1eea23deca4e6d8e
-vendor/lib/lib-imsrcs-v2.so|8b328a903e848e53f81700e2ab26de7bc0eefa5a
-vendor/lib/lib-imsrcsbaseimpl.so|0628259216705af60f8391f4c2242d328bbe33e2
 vendor/lib/lib-imsvtcore.so|4c1e2effbcd1fae3303343522f78063d1063b144
-vendor/lib/lib-imsxml.so|ab1b357ccf0a20e832deefcf5725c727a4e209bf
-vendor/lib/lib-rtpcommon.so|e128b4f0c68e57090b7a5828f78e4a94160f9a64
-vendor/lib/lib-rtpcore.so|1db5810bad4f1ab5cf2fb8144871bbd5b6e7a63a
-vendor/lib/lib-rtpsl.so|7a64f3f0e9200e77aba3448bd56c109a9a27b0d9
-vendor/lib/lib-siputility.so|ec021be4a101f76b2f0d1245fa5da09b7125b3ad
-vendor/lib/lib-uceservice.so|ed55fde13cc82e94c72dfe2874bc668822460cd1
 vendor/lib/vendor.qti.hardware.radio.ims@1.0.so;MODULE_SUFFIX=_vendor|81ceb4c49cfda81a706dd3a02a605bcf6f045818
 vendor/lib/vendor.qti.hardware.radio.ims@1.1.so;MODULE_SUFFIX=_vendor|1c7b3211eb6b8175edfd2cda557ca165b0091e4e
 vendor/lib/vendor.qti.hardware.radio.ims@1.2.so;MODULE_SUFFIX=_vendor|df918f4d644db0f5a7603edfbd9fc6184b4df92d

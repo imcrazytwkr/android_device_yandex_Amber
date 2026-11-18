@@ -65,6 +65,11 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libgui_shim.so')
         .replace_needed('libqdMetaData.so', 'libqdMetaData.system.so'),
+    (
+        'vendor/lib/libdualcameraddm.so',
+        'vendor/lib/libvideobokeh.so',
+    ): blob_fixup()
+        .remove_needed('libstdc++.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(
