@@ -45,7 +45,7 @@ vendor/lib/soundfx/libqcvirt.so
 
 # ANT+ - from yandex
 system/lib64/com.qualcomm.qti.ant@1.0.so
--system/lib64/libantradio.so
+system/lib64/libantradio.so
 vendor/lib64/com.qualcomm.qti.ant@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib64/hw/com.qualcomm.qti.ant@1.0-impl.so
 
@@ -68,7 +68,7 @@ product/lib64/libaptX_encoder.so|df1c89d7af1bb35808d5fe3496b04ba066c10cbc
 vendor/bin/hvdcp_opti
 
 # CNE - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040
--vendor/app/CneApp/CneApp.apk|a4e342225519712b5ac67b3fa6fb832f7ca8f197
+vendor/app/CneApp/CneApp.apk|a4e342225519712b5ac67b3fa6fb832f7ca8f197
 vendor/bin/cnd|ca653a8064fe83a12a12798a73c9cc8c1fecf758
 vendor/etc/cne/wqeclient/ATT/ATT_profile1.xml|578f3f8f56059bfdbef926bcc68d01c15e06951f
 vendor/etc/cne/wqeclient/ATT/ATT_profile2.xml|1fb42c672a12b6660bdce3ea94e0c43719dd9de8
@@ -152,7 +152,7 @@ system_ext/lib/libdpmctmgr.so|778e8076dbf0340ada0bb479a4f9e870fa3fd6f7
 system_ext/lib/libdpmfdmgr.so|accb9e66e7ee7769f0b8fa6add80dc8d4a048982
 system_ext/lib/libdpmframework.so|383682a3e13d482a2eee0fa16963a70c14b7c034
 system_ext/lib/libdpmtcm.so|5e1ab5a20f4b5896194e085677f5a063d8276890
--product/priv-app/dpmserviceapp/dpmserviceapp.apk|92cdfac225a35372b532be4fc64ac817edffaf8f
+product/priv-app/dpmserviceapp/dpmserviceapp.apk|92cdfac225a35372b532be4fc64ac817edffaf8f
 system/framework/tcmclient.jar|a55e6981795bf74b3249c5e7297ea4e3cf1dea83
 vendor/bin/dpmQmiMgr|d536096b310a2d3f30a683c1bdcad8658db1ba52
 vendor/etc/init/dpmQmiMgr.rc|67569302d3a8828a9118c835e5b69c51b0c8ac68
@@ -193,10 +193,10 @@ vendor/lib/mediadrm/libwvdrmengine.so|3e99a7772a52e07678c8ab47e1981ba13d88ced0
 # Bluetooth FM - from yandex
 system/lib/fm_helium.so
 system/lib/libfm-hci.so
--system/lib/vendor.qti.hardware.fm@1.0.so
+system/lib/vendor.qti.hardware.fm@1.0.so
 system/lib64/fm_helium.so
 system/lib64/libfm-hci.so
--system/lib64/vendor.qti.hardware.fm@1.0.so
+system/lib64/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 system/lib64/vendor.qti.hardware.fm@1.0.so:vendor/lib64/vendor.qti.hardware.fm@1.0.so;MODULE_SUFFIX=_vendor
 vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
@@ -314,13 +314,13 @@ vendor/lib64/libRSDriver_adreno.so
 vendor/lib/libqseed3.so|f1c5c5e2db7cf1bf1cd6782af3476ec721c525e7
 vendor/lib/libsdm-color.so|2856bf71af603076b23d4c206dacba7c82350387
 vendor/lib/libsdm-diag.so|b1813c5639553537ccda31b2e44b5d4a85eb2adc
--vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
+vendor/lib/libsdm-disp-vndapis.so|15a98ef885dbd29935b1107d7a2988ae495abb87
 vendor/lib/libsdmextension.so|37d5fca198c8e8526d6a4cb95f9c4bdf719e0efd
 vendor/lib/libtinyxml2_1.so|f54f81359c78715315bc24678c34c129413e6c92
 vendor/lib64/libqseed3.so|24ae4dfe5d9fa27a858b64dfafd1c713da6e6fde
 vendor/lib64/libsdm-color.so|ed022cfcc1546c11b82991986e0a938464400858
 vendor/lib64/libsdm-diag.so|6eb99b83036f917070393fa067eaebc50a5ff307
--vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
+vendor/lib64/libsdm-disp-vndapis.so|ba4978c373f9892d884d07c4cf25dba9d73fda1f
 vendor/lib64/libsdmextension.so|264c00a0920d291700b2948b9337037684986921
 vendor/lib64/libtinyxml2_1.so|ba981e332895a053a67fc54a8190365a3ad37f2d
 
@@ -353,7 +353,7 @@ vendor/lib/libgcs.so
 vendor/lib/libsmwrapper.so
 
 # Media - from yandex
--vendor/lib/libgpustats.so
+vendor/lib/libgpustats.so
 vendor/lib/libI420colorconvert.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmmosal_proprietary.so
@@ -368,7 +368,7 @@ vendor/lib/libOmxVpp.so
 vendor/lib/libvpphvx.so
 vendor/lib/libvpplibrary.so
 vendor/lib/libvqzip.so
--vendor/lib64/libgpustats.so
+vendor/lib64/libgpustats.so
 
 # Perf - from yandex
 vendor/bin/energy-awareness
@@ -392,7 +392,7 @@ vendor/bin/pm-service
 vendor/lib64/libperipheral_client.so|a0dd574c8af3135adae10ef49065fa765906db7a
 
 # Power-off alarm - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040
--product/app/PowerOffAlarm/PowerOffAlarm.apk|fa84887979055559c0aaaf9d3d324f82ed24076f
+product/app/PowerOffAlarm/PowerOffAlarm.apk|fa84887979055559c0aaaf9d3d324f82ed24076f
 vendor/bin/hw/vendor.qti.hardware.alarm@1.0-service|faccc2a7d94d486c2f61a5fe85f5c4598b4147a7
 vendor/bin/power_off_alarm|9f800336a28ad1ad111f164b8c779313cddc98c1
 vendor/etc/init/vendor.qti.hardware.alarm@1.0-service.rc|c9877b6cae0353d5fdea5bc23dba77101b3d6980
@@ -455,14 +455,14 @@ vendor/lib64/hw/vendor.qti.hardware.factory@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.factory@1.0.so
 
 # Radio - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040
--product/app/QtiTelephonyService/QtiTelephonyService.apk|a836ff6b6d7ce7b4e6ab71283fa3da1010669e50
+product/app/QtiTelephonyService/QtiTelephonyService.apk|a836ff6b6d7ce7b4e6ab71283fa3da1010669e50
 product/etc/permissions/qcrilhook.xml|ceb890ab3c1645aa0d0044abab1ba58c4097a991
 product/etc/permissions/telephonyservice.xml|a39eefcaf85fb8da60044fdbbcfddd95deb031c8
 product/etc/permissions/telephony_product_privapp-permissions-qti.xml|0536410f98ef3be8ca7630ba8e9383e41e423ceb
 product/framework/qcrilhook.jar|68bd76620a2c5ba5b5870638b6c175ed8f30d99d
 product/framework/QtiTelephonyServicelibrary.jar|ea30b05eaad3ebee157421b3f31bf8585566b4cd
--product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|a91bf48371b4bcca058a65bbfca2f4d331f9aa3b
--vendor/app/IWlanService/IWlanService.apk|a1af13159be91fdae677e45d9c7a0fe3e6ec0936
+product/priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk|a91bf48371b4bcca058a65bbfca2f4d331f9aa3b
+vendor/app/IWlanService/IWlanService.apk|a1af13159be91fdae677e45d9c7a0fe3e6ec0936
 vendor/bin/hw/qcrild|87bd17981fb0d9982458f9b478159bdcbf5ba0e2
 vendor/bin/adpl|d55783db5aae7ad829ef7fd04dd9b7b67f18ede2
 vendor/bin/pd-mapper|6c9fd5b02c846efcee5f409e77e7ca3bb570b1c2
@@ -557,7 +557,7 @@ system_ext/framework/qti-telephony-common.jar|98951c48563c5846a58c9a3c4c254f32d0
 system/lib64/vndk-29/android.hardware.radio.config@1.1.so:vendor/lib64/android.hardware.radio.config@1.1_shim.so|cb8a481052a3e3beb196e389aca1466031e5ec70
 
 # Radio IMS - from Nokia DRG_sprout 10 QKQ1.190828.002 00WW_4_040
--product/app/uceShimService/uceShimService.apk|95a7e8676532915759cb60f6c01f9ea489929bf5
+product/app/uceShimService/uceShimService.apk|95a7e8676532915759cb60f6c01f9ea489929bf5
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.0-java.xml|aeaf8d4c7d421bd25a1aca1736980b6e4575c7ce
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.1-java.xml|d52cdba3a8f1c00098568965c0cbaa03502f961e
 product/etc/permissions/com.qualcomm.qti.imscmservice-V2.2-java.xml|bc80cc63f55de0d80e9756dd4a9d0afc36072c61
@@ -606,7 +606,7 @@ product/lib/vendor.qti.ims.callinfo@1.0.so|2aa3ca2bf41f8bd1fc87f77b5764401537de8
 product/lib/vendor.qti.ims.rcsconfig@1.0.so|c49133df94067d003e89ab0086937e84a05a69e8
 system_ext/lib/vendor.qti.imsrtpservice@2.0.so|c2764e1fb03873c0bce1af73c26313476e2912bb
 system_ext/lib/vendor.qti.imsrtpservice@2.1.so|455550a6042d4a26a926971bfac8debc1a1cc926
--product/priv-app/ims/ims.apk|3028e7d316c74970fab1f1acfc91e039e426d643
+product/priv-app/ims/ims.apk|3028e7d316c74970fab1f1acfc91e039e426d643
 system_ext/lib/libdiag_system.so|6e67e8bea36a5d2dc70c0ce590d4c296eeb34edd
 system_ext/lib64/libdiag_system.so|dbc091dbaf688533dd10f83561d61b4e3d1b5938
 vendor/bin/ims_rtp_daemon|d9054d1804e110a449cb52afd5e4fea27d0f8630
@@ -662,7 +662,7 @@ vendor/lib/vendor.qti.imsrtpservice@2.1-service-Impl.so|12948fe4c222cf051cccf607
 vendor/lib/vendor.qti.imsrtpservice@2.1.so;MODULE_SUFFIX=_vendor|97b18029d9e93c329cc6f0502fa27acf339051aa
 
 # Time services - from yandex
--vendor/app/TimeService/TimeService.apk
+vendor/app/TimeService/TimeService.apk
 vendor/bin/time_daemon
 vendor/etc/init/init.time_daemon.rc
 vendor/lib64/libtime_genoff.so
