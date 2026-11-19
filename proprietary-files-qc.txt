@@ -264,15 +264,16 @@ vendor/lib64/vendor.qti.gnss@2.0.so;MODULE_SUFFIX=_vendor
 
 # Graphics - yandex
 vendor/lib/egl/eglSubDriverAndroid.so
-vendor/lib/egl/libEGL_adreno.so
-vendor/lib/egl/libGLESv1_CM_adreno.so
-# 32-bit Pie blobs import __aeabi_uldivmod. 18.1 libc exported it; 22.2 keeps it
-# as LIBC_PRIVATE, so the vendor ELF check cannot see it. The real libc still
-# provides it at runtime, and the symbol is difficult to shim.
+# 32-bit Pie blobs import __aeabi_uldivmod, __aeabi_ldivmod, and
+# __gnu_Unwind_Find_exidx. 18.1 libc exported them; 22.2 keeps them as
+# LIBC_PRIVATE, so the vendor ELF check cannot see them. The real libc still
+# provides them at runtime, and the symbols are difficult to shim.
+vendor/lib/egl/libEGL_adreno.so;DISABLE_CHECKELF
+vendor/lib/egl/libGLESv1_CM_adreno.so;DISABLE_CHECKELF
 vendor/lib/egl/libGLESv2_adreno.so;DISABLE_CHECKELF
 vendor/lib/egl/libq3dtools_adreno.so;DISABLE_CHECKELF
 vendor/lib/egl/libq3dtools_esx.so;DISABLE_CHECKELF
-vendor/lib/egl/libQTapGLES.so
+vendor/lib/egl/libQTapGLES.so;DISABLE_CHECKELF
 vendor/lib/hw/vulkan.sdm660.so;DISABLE_CHECKELF
 vendor/lib/libadreno_utils.so
 vendor/lib/libbccQTI.so
@@ -494,7 +495,7 @@ vendor/lib64/libpdnotifier.so|f187a84db01f690035aeebbffbec0ee3aec9769e
 vendor/lib64/libqcrilFramework.so|7a98476f3fe222ec62263c387dce1996cb707a31
 vendor/lib64/libqrtr.so|9addbb504885bb2a82e0b19e38077742bc48c10f
 vendor/lib64/libqsocket.so|dd4067d7a79565f11034277d4ef46698cd17c19b
-vendor/lib64/libril-qc-hal-qmi.so|fb28d5bdcfdbbd5de5dc9b2b4eb85e440da7f857
+vendor/lib64/libril-qc-hal-qmi.so|30d9ed7073990fad0a60ac45e4412017e78d6322
 vendor/lib64/libril-qc-ltedirectdisc.so|71e79e3968f7ccf086f5911778ac04c676130110
 vendor/lib64/libril-qc-radioconfig.so|511e7c38c628be0d746f4acc49dfa4cc6af59978
 vendor/lib64/libril-qcril-hook-oem.so|bc216efecb94b352b1d9be890bbcf5fc29e2f830

@@ -121,6 +121,38 @@ blob_fixups: blob_fixups_user_type = {
         'vendor/lib/libvideobokeh.so',
     ): blob_fixup()
         .remove_needed('libstdc++.so'),
+    (
+        'vendor/lib/vendor.qti.hardware.factory@1.0.so',
+        'vendor/lib/vendor.qti.hardware.fm@1.0.so',
+        'vendor/lib64/com.qualcomm.qti.ant@1.0.so',
+        'vendor/lib64/vendor.display.color@1.0.so',
+        'vendor/lib64/vendor.display.postproc@1.0.so',
+        'vendor/lib64/vendor.qti.gnss@1.0.so',
+        'vendor/lib64/vendor.qti.gnss@1.1.so',
+        'vendor/lib64/vendor.qti.gnss@2.0.so',
+        'vendor/lib64/vendor.qti.gnss@1.2.so',
+        'vendor/lib64/vendor.qti.hardware.factory@1.0.so',
+        'vendor/lib64/vendor.qti.hardware.fm@1.0.so',
+        'vendor/lib64/vendor.qti.hardware.tui_comm@1.0.so',
+    ): blob_fixup()
+        .add_needed('libhidlbase_shim.so'),
+    (
+        'system/lib64/com.qualcomm.qti.ant@1.0.so',
+        'system/lib64/vendor.qti.gnss@1.0.so',
+        'system/lib64/vendor.qti.gnss@1.1.so',
+        'system/lib64/vendor.qti.gnss@1.2.so',
+        'system/lib64/vendor.qti.gnss@2.0.so',
+        'system/lib64/vendor.qti.gnss@2.1.so',
+    ): blob_fixup()
+        .add_needed('libhidlbase_shim_sys.so'),
+    (
+        'vendor/lib/libllvm-glnext.so',
+        'vendor/lib/libllvm-qcom.so',
+        'vendor/lib64/libllvm-glnext.so',
+        'vendor/lib64/libllvm-qcom.so',
+        'vendor/lib64/libril-qc-hal-qmi.so',
+    ): blob_fixup()
+        .add_needed('libgnu_strerror_shim.so'),
 }  # fmt: skip
 
 module = ExtractUtilsModule(

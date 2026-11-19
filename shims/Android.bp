@@ -1,0 +1,14 @@
+cc_library_shared {
+    name: "libhidlbase_shim_sys",
+    stem: "libhidlbase_shim_sys",
+    srcs: ["libhidlbase_shim_sys.cpp"],
+    shared_libs: ["libhidlbase"],
+    compile_multilib: "64",
+}
+
+cc_library_shared {
+    name: "libgnu_strerror_shim",
+    srcs: ["gnu_strerror_shim.cpp"],
+    vendor: true,
+    compile_multilib: "both",
+}
