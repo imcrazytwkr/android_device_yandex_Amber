@@ -337,6 +337,7 @@ PRODUCT_PACKAGES += \
     libhidlbase_shim \
     libhidlbase_shim_sys \
     libgnu_strerror_shim \
+    libcutils_shim \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \

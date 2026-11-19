@@ -137,14 +137,18 @@ blob_fixups: blob_fixups_user_type = {
     ): blob_fixup()
         .add_needed('libhidlbase_shim.so'),
     (
+        'system/lib/vendor.qti.hardware.fm@1.0.so',
         'system/lib64/com.qualcomm.qti.ant@1.0.so',
         'system/lib64/vendor.qti.gnss@1.0.so',
         'system/lib64/vendor.qti.gnss@1.1.so',
         'system/lib64/vendor.qti.gnss@1.2.so',
         'system/lib64/vendor.qti.gnss@2.0.so',
         'system/lib64/vendor.qti.gnss@2.1.so',
+        'system/lib64/vendor.qti.hardware.fm@1.0.so',
     ): blob_fixup()
         .add_needed('libhidlbase_shim_sys.so'),
+    'system_ext/lib/libdpmframework.so': blob_fixup()
+        .add_needed('libcutils_shim.so'),
     (
         'vendor/lib/libllvm-glnext.so',
         'vendor/lib/libllvm-qcom.so',

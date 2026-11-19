@@ -3,7 +3,7 @@ cc_library_shared {
     stem: "libhidlbase_shim_sys",
     srcs: ["libhidlbase_shim_sys.cpp"],
     shared_libs: ["libhidlbase"],
-    compile_multilib: "64",
+    compile_multilib: "both",
 }
 
 cc_library_shared {
